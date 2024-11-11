@@ -1,0 +1,37 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+
+.element1 {
+    background-color: rgba(0, 128, 255, 0.5); /* Напівпрозорий */
+    color: #fff;
+    border: 2px solid #0073e6;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+.element2 {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Градієнт */
+    color: #333;
+    border: 2px solid #ff7e5f;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+.element3 {
+    background-color: #34c759;
+    color: #fff;
+    border: 2px solid #2a9d8f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Тінь */
+}
