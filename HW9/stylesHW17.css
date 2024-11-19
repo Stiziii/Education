@@ -1,0 +1,73 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #9af897;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #045973;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.color-change {
+    background-color: #72ddc7;
+    animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% { color: #88cb45; }
+    100% { color: #0fbc05; }
+}
+
+.fade-out {
+    background-color: #20dbd2;
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+.rotate {
+    background-color: #037773;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.resize {
+    background-color: #6a11cb;
+    animation: resize 4s infinite alternate;
+}
+
+@keyframes resize {
+    0% { width: 100px; height: 100px; }
+    100% { width: 200px; height: 200px; }
+}
+
+.move {
+    background-color: #feb47b;
+    animation: move 6s infinite alternate;
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
