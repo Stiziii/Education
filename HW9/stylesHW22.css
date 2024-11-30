@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+
+.flex-container-horizontal {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #8bc34a;
+    background-color: #e8f5e9;
+}
+
+.flex-container-horizontal .item:first-child {
+    flex-grow: 1; 
+}
+
+.flex-container-horizontal .item {
+    background-color: #c5e1a5;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #689f38;
+    flex-basis: 100px;
+}
+
+@media (max-width: 600px) {
+    .flex-container-horizontal {
+        flex-direction: column;
+    }
+}
+
+
+.flex-container-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 150px;
+    background-color: #c8e6c9;
+}
+
+.flex-container-centered .centered-item {
+    background-color: #aed581;
+    padding: 20px;
+    border: 1px solid #7cb342;
+    flex-basis: 200px; 
+}
+
+
+.flex-container-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 200px;
+    background-color: #dcedc8;
+}
+
+.flex-container-columns .column {
+    flex: 1; 
+    background-color: #9ccc65;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #558b2f;
+}
+
+.flex-container-columns .highlight {
+    flex-shrink: 0; 
+    background-color: #7cb342;
+    color: white;
+}
