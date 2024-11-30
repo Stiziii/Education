@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Floats та Clearfix</title>
+    <link rel="stylesheet" href="stylesHW21.css">
+</head>
+<body>
+
+    <section class="positioning">
+        <header class="fixed-header">Фіксований Заголовок</header>
+        <div class="static-element">Статичний Елемент</div>
+        <div class="relative-element">Відносний Елемент</div>
+        <div class="absolute-element">Абсолютний Елемент</div>
+        <div class="sticky-element">Липкий Елемент</div>
+    </section>
+
+    <section class="float-layout">
+        <h2>Макет Float</h2>
+        <div class="float-container clearfix">
+            <div class="float-left">Лівий Блок</div>
+            <div class="float-right">Правий Блок</div>
+            <div class="float-left">Ще Один Лівий Блок</div>
+        </div>
+    </section>
+
+    <section class="float-issues">
+        <h2>Проблеми з Висотою</h2>
+        <div class="parent-container clearfix">
+            <div class="child float-left">Дитячий Блок 1</div>
+            <div class="child float-left">Дитячий Блок 2</div>
+            <div class="child float-left">Дитячий Блок 3</div>
+        </div>
+    </section>
+</body>
+</html>

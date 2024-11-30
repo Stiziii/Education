@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background: linear-gradient(180deg, #d9f99d, #a3e635, #000);
+    color: #000;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #81c784;
+    background: linear-gradient(120deg, #d9f99d, #bef264);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #bef264, #a3e635);
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.static-element {
+    position: static;
+    margin-top: 70px;
+    padding: 10px;
+    background: #d9f99d;
+}
+
+.relative-element {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    padding: 10px;
+    background: #bef264;
+    border: 1px solid #a3e635;
+}
+
+.absolute-element {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    padding: 10px;
+    background: #a3e635;
+    border: 1px solid #84cc16;
+}
+
+.sticky-element {
+    position: sticky;
+    top: 20px;
+    padding: 10px;
+    background: #99f6e4;
+    border: 1px solid #67e8f9;
+}
+
+
+.float-container {
+    border: 1px solid #81c784;
+    padding: 10px;
+    background: linear-gradient(120deg, #bef264, #d9f99d);
+}
+
+.float-left {
+    float: left;
+    width: 45%;
+    margin: 5px;
+    padding: 20px;
+    background: #99f6e4;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.float-right {
+    float: right;
+    width: 45%;
+    margin: 5px;
+    padding: 20px;
+    background: #a3e635;
+    color: #000;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parent-container {
+    border: 2px solid #a3e635;
+    background: linear-gradient(120deg, #bef264, #d9f99d);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.child {
+    float: left;
+    width: 30%;
+    margin: 5px;
+    padding: 15px;
+    background: #84cc16;
+    color: white;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
